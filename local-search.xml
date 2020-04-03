@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>hexo实际使用随笔</title>
+    <link href="/2020/04/02/hexo%E5%AE%9E%E9%99%85%E4%BD%BF%E7%94%A8%E9%9A%8F%E7%AC%94/"/>
+    <url>/2020/04/02/hexo%E5%AE%9E%E9%99%85%E4%BD%BF%E7%94%A8%E9%9A%8F%E7%AC%94/</url>
+    
+    <content type="html"><![CDATA[<h1 id="hexo使用随笔记录"><a href="#hexo使用随笔记录" class="headerlink" title="hexo使用随笔记录"></a>hexo使用随笔记录</h1><h2 id="hexo-中遇到问题时的解决-注意事项"><a href="#hexo-中遇到问题时的解决-注意事项" class="headerlink" title="hexo 中遇到问题时的解决(注意事项)"></a>hexo 中遇到问题时的解决(注意事项)</h2><p>1.在各种修改各种配置信息时，冒号后面要添加一个空格再填写属性值</p><p>2.每个属性值之间要用空格隔开</p><p>3.hexo主题设置中的部分语法与hexo主设置中的语法不同，要注意提示</p><p>4.部分外部解析可能会导致博客网站显示不正常</p><p>5.大多数的hexo命令都要在hexo根目录下执行</p><p>6.hexo s 命令无法开启本地服务可能是端口出错，需要通过更换端口解决</p><h2 id="hexo主题"><a href="#hexo主题" class="headerlink" title="hexo主题"></a>hexo主题</h2><p>目前使用的是Butterfly，详情见页脚</p><h2 id="hexo到github仓库的上传"><a href="#hexo到github仓库的上传" class="headerlink" title="hexo到github仓库的上传"></a>hexo到github仓库的上传</h2><p>当hexo生成的文件较大时，可能需要一些时间才能上传到github仓库中(即使你在上传时已显示上传完成)</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>随笔</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>C-合并两个MP3文件</title>
+    <link href="/2020/04/02/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AAMP3%E6%96%87%E4%BB%B6/"/>
+    <url>/2020/04/02/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AAMP3%E6%96%87%E4%BB%B6/</url>
+    
+    <content type="html"><![CDATA[<h1 id="C语言学习笔记-合并两个MP3文件-文件系统的基础利用"><a href="#C语言学习笔记-合并两个MP3文件-文件系统的基础利用" class="headerlink" title="C语言学习笔记-合并两个MP3文件(文件系统的基础利用)"></a>C语言学习笔记-合并两个MP3文件(文件系统的基础利用)</h1><pre><code class="c">#include&lt;stdio.h&gt;FILE *hbfun(FILE *fp1,FILE *fp2){    FILE *fp3;    char c;    fp3=fopen(&quot;合并后的路径&quot;,&quot;wb&quot;);//合并后的文件存放的路径    while(!feof(fp1))    {        c=fgerc(fp1);        fputc(c,fp3);    }    while(!feof(fp2))    {        c=fgerc(fp2);        fputc(c,fp3);    }}int main(){    FILE *fp1,*fp2,*fp3;    fp1=fopen(&quot;第一首歌曲的路径&quot;,&quot;rb&quot;);    fp2=fopen(&quot;第二首歌曲的路径&quot;,&quot;rb&quot;);    hbfun(fp1,fp2);    fclose(fp1);     fclose(fp2); }</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>学习笔记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>C</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>关于孙杨被禁赛八年</title>
+    <link href="/2020/04/02/%E5%85%B3%E4%BA%8E%E5%AD%99%E6%9D%A8%E8%A2%AB%E7%A6%81%E8%B5%9B%E5%85%AB%E5%B9%B4/"/>
+    <url>/2020/04/02/%E5%85%B3%E4%BA%8E%E5%AD%99%E6%9D%A8%E8%A2%AB%E7%A6%81%E8%B5%9B%E5%85%AB%E5%B9%B4/</url>
+    
+    <content type="html"><![CDATA[<h1 id="关于孙杨被禁赛八年"><a href="#关于孙杨被禁赛八年" class="headerlink" title="关于孙杨被禁赛八年"></a>关于孙杨被禁赛八年</h1><p> 在微博看了众多评论，也在知乎看了诸多回答，发现一个奇怪现象<br>每个支持孙杨的评论（回答）下，几乎都有几句带有tian、这是无脑支持、爱国绑架的语言<br>但是，几乎所有支持孙杨的声音都表明了自己的具体推测与看法，而大部分hei孙杨的声音都只是无脑地去hei（这个就不具体指明对象了，大家感兴趣的可以去看看）<br>##############<br>在这之中，支持孙杨的人大多有以下观点：<br>1.处罚年限的规定是2——8年，为什么孙杨直接就被禁赛了8年？<br>2.3名检尿员中有2名不具备检查资质，为什么拒检被判违规？<br>3.WADA对于欧美运动员的服药时的态度与对其它国家运动员的服药时的态度完全不同。<br>4.孙杨被进行药检的次数远高于其他运动员。<br>##############<br>觉得孙杨没有被冤枉（处罚合理）的人大多有以下观点：<br>1.孙杨有“前科”<br>2.孙杨拒绝尿检的理由过于“奇特”<br>3.在此前孙杨接受过多次类似的检查（此前的多次检查中部分检查员也不具有相关资质），为何孙杨只拒绝了这次尿检？<br>4.尿（血）检容器有特殊的一次性设计，封存后就无法在中途打开<br>##############<br>看了这些观点后，相信大家对此事有了大致的判断。</p><h2 id="先谈谈对于孙杨有利的观点的看法"><a href="#先谈谈对于孙杨有利的观点的看法" class="headerlink" title="先谈谈对于孙杨有利的观点的看法"></a>先谈谈对于孙杨有利的观点的看法</h2><p>1.对于禁赛8年的大多解释是孙杨有“前科”，但实际上“曲美他嗪”事假中，孙杨在全国游泳冠军赛上的1500米冠军头衔被取消，罚款5000元，也就是说说在当时对已经孙杨做出了处罚，并且“检出”与“拒检”是两个完全不同的概念，就好比一个是警察在你家里搜出了枪支并作出了处罚，一个是警察带着一个与此事毫无关联的人要在你家里搜查，进屋后你发现其中有一个人与此事毫无关联（无相关资质），然后你拒绝了警察的搜查，最后警察并不能将之前在你家搜出枪支的事件作为加重你此次“拒绝检查”处罚的条件。</p><p>2.2名不具备检查资质的人员中有一位是有护士证的，而拥有护士证也就代表此人有拥有抽验血液的资质，在此前的大多数检查中（包括对其他运动员的检查）其实检查人员并不都具有检查资质，WADA对此的解释是检查人员中一名人员有检查资质负责检查主体流程其他检查人员只起辅助作用。（按是否符合规定来讲，其实此事的检查流程是符合WADA的规定的，这也是孙杨败诉的主要原因）</p><p>3.WADA的“双规”，怎么讲呢，这就涉及到了官方与非官方的问题，当遇到一些重大事件时，我们大多都会选择听取官方意见或是什么，这么多年过来了，相信大家也都明白了官方有时也有“纰漏”，甚至有时官方的真实性还不如非官方，所以对于“双规”我就不多做评价了，毕竟咱们也不了解背后的真相。</p><p>4.孙杨被药检次数一直都没有一个准确的数据公布出来，也没有其他运动员被药检次数供参考比较，所以我觉得“孙杨被进行药检的次数远高于其他运动员”还不能盖棺定论，毕竟我们都知道到国家这个层面的运动员训练之外最重要的事就是体检，几乎是每周都有小检，每月都有大检查（这也就说明普通检查对远动员的影响其实不大），WADA大可不必想出这种恶心自己的方法来恶心别人。</p><h2 id="再谈谈对于孙杨不利的观点的看法"><a href="#再谈谈对于孙杨不利的观点的看法" class="headerlink" title="再谈谈对于孙杨不利的观点的看法"></a>再谈谈对于孙杨不利的观点的看法</h2><p>1.“曲美他嗪”事件的官方声明是孙杨患有心肌缺血所以服用了“万爽力”这种药物，对于“官方”的看法我已经在之前提到过了，在这里我就不再赘述，我要说的是孙杨患有心脏方面的疾病并不是什么值得惊讶的事。</p><p>2.孙杨拒绝尿检的理由确实很“迷”，因为每个国家运动员的背后都应该有着一个资深的团队，对于检查的“合规”或是“不合规”这个团队都应该有着深刻的理解，而在之后的听证会中也暴露了孙杨团队的“迷”，孙杨在听证会口述时多次推翻（本方）原有观点（孙杨团队未做任何提醒），在之后的论述中孙杨又紧抓“2名不具备资质的检查员是否会侵犯我的隐私”，用最近手机圈很流行的一句话来说就是“方向错了”，像我这种非专业人士都能看出问题，WADA抓住的是“合规”与“拒检”，而孙杨？？？？？？？</p><p>3.之前的接受与现在的抗拒，这其实也是团队的问题之一，照理说已经经过了这么多次检查孙杨应该是很清楚检查流程了，即便是孙杨不清楚，孙杨背后的团队也应该清楚，果真是“迷”一般的团队。<br>4.容器的一次性设计确实对于孙杨来说是一个无法解释的问题，（我想这也是之所以在听证会时孙杨方没有紧咬“中途添加”的原因）。<br>~<del>~</del></p><h2 id="总结一下"><a href="#总结一下" class="headerlink" title="总结一下"></a>总结一下</h2><p>我其实是相信孙杨没有服用药物的（因为服药也是有时效性的，大多数“检出”案例都是在赛前或是赛后），对于拒检禁赛8年我也觉得时间过长，在事情尚不明朗的情况下，我觉得大可不必去hei什么，或者去捧什么，那些说 孙杨是国人就不可能犯错的声音最好消失，那些说 支持孙杨的人是 tian 的声音也最好不要存在。 </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>观点评论</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>时事</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Android应用推荐-生活的选择</title>
+    <link href="/2019/10/30/%E7%94%9F%E6%B4%BB%E7%9A%84%E9%80%89%E6%8B%A9/"/>
+    <url>/2019/10/30/%E7%94%9F%E6%B4%BB%E7%9A%84%E9%80%89%E6%8B%A9/</url>
+    
+    <content type="html"><![CDATA[<p><img src="/img/%E4%BA%91%E7%AB%AF.jpg" srcset="/img/loading.gif" alt="云端"></p><p>一个睡到自然醒的早晨</p><p>阳光漫入房间</p><p>打开窗子是鸟儿的叫声</p><p>微风中夹杂着花香</p><p>打开手机</p><p>回复几段消息</p><p>吃完早餐</p><p>新的一天 </p><p>开始了</p><h1 id="一天的开始"><a href="#一天的开始" class="headerlink" title="一天的开始"></a>一天的开始</h1><h2 id="进入澎湃新闻-看看最新要文，不与时代脱轨"><a href="#进入澎湃新闻-看看最新要文，不与时代脱轨" class="headerlink" title="进入澎湃新闻 看看最新要文，不与时代脱轨"></a>进入澎湃新闻 看看最新要文，不与时代脱轨</h2><p><img src="/img/%E6%BE%8E%E6%B9%83%E6%96%B0%E9%97%BB.jpg" srcset="/img/loading.gif" alt="澎湃新闻"></p><p><a href="https://www.coolapk.com/apk/com.wondertek.paper" target="_blank" rel="noopener"><strong>澎湃新闻</strong></a></p><p>【澎湃新闻是上海报业旗下的平台，内容质量高，手机端的阅读体验也很不错】</p><h2 id="背几个单词-积流成河"><a href="#背几个单词-积流成河" class="headerlink" title="背几个单词 积流成河"></a>背几个单词 积流成河</h2><p><img src="/img/%E5%A2%A8%E5%A2%A8%E8%83%8C%E5%8D%95%E8%AF%8D.jpg" srcset="/img/loading.gif" alt="墨墨背单词"></p><p><a href="https://www.coolapk.com/apk/com.maimemo.android.momo" target="_blank" rel="noopener"><strong>墨墨背单词</strong></a></p><p>【默默背单词的界面简洁，还拥有分析，分享，记录等诸多功能】</p><h2 id="放松一下-听几首音乐"><a href="#放松一下-听几首音乐" class="headerlink" title="放松一下 听几首音乐"></a>放松一下 听几首音乐</h2><p><img src="/img/MOO%E9%9F%B3%E4%B9%90.jpg" srcset="/img/loading.gif" alt="MOO音乐"></p><p><a href="https://www.coolapk.com/apk/com.tencent.blackkey" target="_blank" rel="noopener">MOO音乐</a></p><p>【MOO音乐是腾讯系应用中少有的良心应用，没有让人厌恶的广告，独特的UI界面，“音乐即自由”的标语，让不少人爱上了它】</p><h1 id="该吃午餐了"><a href="#该吃午餐了" class="headerlink" title="该吃午餐了"></a>该吃午餐了</h1><p>早餐的好坏牵动着一整天的心情</p><p>而午餐的好坏决定着后半天的精力</p><p>所以</p><p>一定不能饿着哦</p><h1 id="午后时光"><a href="#午后时光" class="headerlink" title="午后时光"></a>午后时光</h1><h2 id="专注地做一些事情"><a href="#专注地做一些事情" class="headerlink" title="专注地做一些事情"></a>专注地做一些事情</h2><p><img src="/img/doing.jpg" srcset="/img/loading.gif" alt="doing"></p><p><a href="https://www.coolapk.com/apk/ganwu.doing" target="_blank" rel="noopener"><strong>Doing</strong></a></p><p>【Doing是一款基于番茄工作法开发的应用，无广告，全免费】</p><h2 id="学习让生活变得充实"><a href="#学习让生活变得充实" class="headerlink" title="学习让生活变得充实"></a>学习让生活变得充实</h2><p><img src="/img/%E7%BD%91%E6%98%93%E5%85%AC%E5%BC%80%E8%AF%BE.jpg" srcset="/img/loading.gif" alt="网易公开课"></p><p><a href="https://www.coolapk.com/apk/com.netease.vopen" target="_blank" rel="noopener"><strong>网易公开课</strong></a></p><p>【网易公开课的课程资源应该可以排进全网前三了】</p><h1 id="静谧的夜"><a href="#静谧的夜" class="headerlink" title="静谧的夜"></a>静谧的夜</h1><h2 id="白噪音可以帮助你更快地入睡"><a href="#白噪音可以帮助你更快地入睡" class="headerlink" title="白噪音可以帮助你更快地入睡"></a>白噪音可以帮助你更快地入睡</h2><p><img src="/img/%E5%B0%8F%E7%B1%B3%E7%99%BD%E5%99%AA%E9%9F%B3.jpg" srcset="/img/loading.gif" alt="小米白噪音"></p><p><a href="https://www.coolapk.com/apk/com.miui.whitenoise" target="_blank" rel="noopener"><strong>小米白噪音</strong></a></p><p>【白噪音逐渐成为了人们的生活必需品】（推荐外放而不是戴耳机）</p><h2 id="无眠之夜，你还可以听听远方的声音"><a href="#无眠之夜，你还可以听听远方的声音" class="headerlink" title="无眠之夜，你还可以听听远方的声音"></a>无眠之夜，你还可以听听远方的声音</h2><p> <a href="https://www.coolapk.com/feed/13989979?shareKey=YzZmY2JiZTNmNGRhNWRiOTM5OGQ~&shareUid=1467094&shareFrom=com.coolapk.market_9.5" target="_blank" rel="noopener"><strong>TuneIn Radio Pro</strong></a> </p><p>【 TuneIn Radio Pro 是一款可以收听全球电台的软件】</p><h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>[Android应用推荐] 生活的选择 全文完</p><p>祝大家 </p><p>早安</p><p>午安</p><p>晚安</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>应用推荐</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Android应用</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>授人以鱼不如授人以渔-博客篇-2</title>
+    <link href="/2019/10/29/%E6%8E%88%E4%BA%BA%E4%BB%A5%E9%B1%BC%E4%B8%8D%E5%A6%82%E6%8E%88%E4%BA%BA%E4%BB%A5%E6%B8%94-%E5%8D%9A%E5%AE%A2%E7%AF%872/"/>
+    <url>/2019/10/29/%E6%8E%88%E4%BA%BA%E4%BB%A5%E9%B1%BC%E4%B8%8D%E5%A6%82%E6%8E%88%E4%BA%BA%E4%BB%A5%E6%B8%94-%E5%8D%9A%E5%AE%A2%E7%AF%872/</url>
+    
+    <content type="html"><![CDATA[<h1 id="授人以鱼不如授人以渔-博客篇-2"><a href="#授人以鱼不如授人以渔-博客篇-2" class="headerlink" title="授人以鱼不如授人以渔-博客篇-2"></a>授人以鱼不如授人以渔-博客篇-2</h1><h2 id="hexo加Github搭建个人博客（二）"><a href="#hexo加Github搭建个人博客（二）" class="headerlink" title="hexo加Github搭建个人博客（二）"></a>hexo加Github搭建个人博客（二）</h2><p><em>本篇我将为大家介绍hexo的基本命令、Markdown的基本语法以及关于hexo主题的大致配置</em></p><h3 id="hexo基本命令"><a href="#hexo基本命令" class="headerlink" title="hexo基本命令"></a>hexo基本命令</h3><p>在hexo的实际使用中我们用到许多的命令，下面我将为大家介绍一些常用的hexo命令</p><h4 id="1-清理已生成的静态页面"><a href="#1-清理已生成的静态页面" class="headerlink" title="1.清理已生成的静态页面"></a>1.清理已生成的静态页面</h4><p><code>hexo clean</code></p><p>这个命令可以清理已经生成的静态页面，一般在博客页面显示异常或者博客上传后页面并未更新时使用</p><h4 id="2-生成静态页面"><a href="#2-生成静态页面" class="headerlink" title="2.生成静态页面"></a>2.生成静态页面</h4><p><code>hexo generate</code></p><p>可简写为 <code>hexo g</code></p><p>在第一篇时我已经向大家描述了hexo的静态生成，而这个命令就是用于此处</p><p>当你在终端输入这个命令时，hexo就会将你填写的信息转换为静态网页</p><h4 id="3-上传到仓库"><a href="#3-上传到仓库" class="headerlink" title="3.上传到仓库"></a>3.上传到仓库</h4><p><code>hexo deploy</code></p><p>可简写为 <code>hexo d</code></p><p>这个命令的作用是将你生成的静态网页和其它所需文件上传到deploy服务器中，但实际上这个命令也有一部分生成静态页面的作用，如果你是利用Github搭建的blog，那么这个命令就会将将文件传输到你所指定的Github仓库中</p><h4 id="4-开启本地服务"><a href="#4-开启本地服务" class="headerlink" title="4.开启本地服务"></a>4.开启本地服务</h4><p><code>hexo server</code></p><p>可简写为 <code>hexo s</code></p><p>这个命令的作用是开启你的本地服务器，让你能够从本地服务器预览blog网页 默认预览地址： <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p><p>对 Hexo 根目录_config.yml的进行的修改，需要重启本地服务器后才能预览效果</p><h4 id="5-新建一篇博客文章"><a href="#5-新建一篇博客文章" class="headerlink" title="5.新建一篇博客文章"></a>5.新建一篇博客文章</h4><p><code>hexo new</code></p><p>可简写为 <code>hexo n</code></p><p>这是一个带参命令，正确使用形式为 <code>hexo n &quot;文章标题名称&quot;</code></p><p>使用这个命令可以新建一个标题为 “ ” 中内容的文章</p><h3 id="hexo的主题配置"><a href="#hexo的主题配置" class="headerlink" title="hexo的主题配置"></a>hexo的主题配置</h3><p>你可以在hexo主题网站选择你喜欢的主题</p><p>大部分主题都有自己的安装教程，你可以在选择主题时查看</p><p>hexo主题网站：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></p><p><strong>hexo的主题繁多，这里我以我博客使用的主题 Butterfly 为例</strong></p><p><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">Butterfly主题地址</a></p><p><a href="https://jerryc.me/posts/21cfbf15/#%E5%BF%AB%E9%80%9F%E9%96%8B%E5%A7%8B" target="_blank" rel="noopener">Butterfly安装文档</a></p><p>首先，在hexo文件夹中打开GIt Bash Here 输入以下命令</p><p><code>git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly</code></p><p>这时Butterfly就已经安装到了你的hexo本地文件夹下</p><p>接下来您需要在hexo配置文件夹中将你的主题设置为Butterfly，如下</p><p><code>theme: Butterfly</code></p><p>之后你可以在 hexo\themes\Butterfly_config.yml 中对你的主题进行配置</p><p>这是我的配置文件，供大家参考</p><p><a href="https://shimo.im/docs/QvggxWqyJHVYdVxw/「001」" target="_blank" rel="noopener">配置浏览</a></p><p>主题的配置都大同小异，我在我的Butterfly主题配置文件中添加了中文注释以方便大家阅读，如果有对于主题配置有其它的问题可以在主题的安装文档中查看(<a href="https://jerryc.me/posts/21cfbf15/#%E5%BF%AB%E9%80%9F%E9%96%8B%E5%A7%8B" target="_blank" rel="noopener">Butterfly安装文档</a>)</p><h3 id="Markdown的基本语法"><a href="#Markdown的基本语法" class="headerlink" title="Markdown的基本语法"></a>Markdown的基本语法</h3><p> Markdown 语言是在 2004 由约翰·格鲁伯创建的一种轻量级标记语言，目前被广泛应用于各大编辑器中，Hexo的博客文章编辑系统便支持这一种语言。 </p><h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><p>使用#符便可表示标题，一级标题为#，二级标题为##，以此类推</p><pre><code class="Markdown"># 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题</code></pre><h4 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h4><p>Markdown 可以使用以下几种字体：</p><p><code>倾斜：* *或者 _ _</code></p><p><code>加粗：** **或者__ __</code></p><p><code>倾斜加粗：*** *** 或者___ ___</code></p><pre><code class="markdown">*斜体文本*_斜体文本_**粗体文本**__粗体文本__***粗斜体文本***___粗斜体文本___</code></pre><h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><p>Markdown 支持有序列表和无序列表。</p><p>有序列表使用数字标记并加上.</p><pre><code class="markdown">1. 一2. 二3. 三</code></pre><p>无序列表使用星号(<strong>***)、加号(</strong>+<strong>)或是减号(</strong>-**)作为列表标记</p><pre><code class="markdown">* 一* 二* 三+ ACD+ CDF+ QWC- 奎- 歪- 歪</code></pre><h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><p>代码语句：‘ ’</p><p>你可以利用’ ‘将代码片段以文本的方式完整地显示出来</p><p><code>printf(&quot;kuiwaiwai&quot;);</code></p><p>代码区块：</p><p>代码区块代码区块使用 4 个空格或者一个制表符（Tab 键）。</p><p>利用代码区块可以触发大部分网站的代码复制功能，使读者能够更简便地复制代码。</p><pre><code class="c">while(1){printf(&quot;kuiwaiwai&quot;);}</code></pre><h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><p>链接的使用方法有两种：</p><p>直接链接：&lt; &gt;</p><pre><code class="markdown">链接至必应&lt;https://cn.bing.com/&gt;</code></pre><p><code>名称链接：[ ]( )</code></p><pre><code class="markdown">链接至[必应](https://cn.bing.com/)</code></pre><h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><p>图片的使用：</p><p><code>！[属性](图片链接)</code></p><p>例如显示一张Github的logo</p><pre><code class="markdown">！[Github](https://maxcdn.icons8.com/Share/icon/p1em/Logos/github1600.png)</code></pre><h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><p> Markdown 制作表格使用 <strong>|</strong> 来分隔不同的单元格，使用 <strong>-</strong> 来分隔表头和其他行。 </p><pre><code class="markdown">|  表头   | 表头  ||  ----  | ----  || 单元格  | 单元格 || 单元格  | 单元格 |</code></pre><p><em>由于篇幅有限，所以这里只列出了一些基本的Markdown语法，有时间我会写一篇关于Markdown语法的详细教程。</em></p><p>——————————————————————</p><h3 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h3><p>本文参考</p><p><a href="https://jerryc.me/posts/21cfbf15/#%E5%BF%AB%E9%80%9F%E9%96%8B%E5%A7%8B" target="_blank" rel="noopener">Butterfly安装文档</a></p><p><a href="http://www.markdown.cn/" target="_blank" rel="noopener">Markdown官方</a></p><p>作者：奎歪歪</p><p>转载请署名</p><p>hexo加Github搭建个人博客（二）全文已完</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>授人以鱼不如授人以渔-博客篇-1</title>
+    <link href="/2019/10/26/%E6%8E%88%E4%BA%BA%E4%BB%A5%E9%B1%BC%E4%B8%8D%E5%A6%82%E6%8E%88%E4%BA%BA%E4%BB%A5%E6%B8%94-%E5%8D%9A%E5%AE%A2%E7%AF%871/"/>
+    <url>/2019/10/26/%E6%8E%88%E4%BA%BA%E4%BB%A5%E9%B1%BC%E4%B8%8D%E5%A6%82%E6%8E%88%E4%BA%BA%E4%BB%A5%E6%B8%94-%E5%8D%9A%E5%AE%A2%E7%AF%871/</url>
+    
+    <content type="html"><![CDATA[<h1 id="授人以鱼不如授人以渔-博客篇-1"><a href="#授人以鱼不如授人以渔-博客篇-1" class="headerlink" title="授人以鱼不如授人以渔-博客篇-1"></a>授人以鱼不如授人以渔-博客篇-1</h1><h2 id="hexo加Github搭建个人博客（一）"><a href="#hexo加Github搭建个人博客（一）" class="headerlink" title="hexo加Github搭建个人博客（一）"></a>hexo加Github搭建个人博客（一）</h2><p>在这之前，我们先介绍一下hexo加Github搭建博客的有关事项</p><p><em>1.hexo搭建的是静态网页，每次修改后都要执行静态生成，然后再执行部署</em></p><p><em>2.Github仓库服务器到博客网页需要一定的传输时间（反应时间），在博客更新部署后博客网页不会立刻做出改变，需要稍等一会</em></p><h3 id="第一步：安装Github和node-js"><a href="#第一步：安装Github和node-js" class="headerlink" title="第一步：安装Github和node.js"></a>第一步：安装Github和node.js</h3><p>1.Node.js安装地址</p><p><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node下载</a></p><p>2.Github安装地址</p><p><a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Github下载</a></p><p>Github安装教程：<a href="https://www.runoob.com/git/git-install-setup.html" target="_blank" rel="noopener">Git安装教程</a></p><p>3.在安装Github后用以下方法确认是否安装成功</p><p><strong>方法1</strong><br>微软键+R ——&gt; cmd ——&gt; 键入<code>git version</code> 出现版本号表示安装完成</p><p><strong>方法2</strong><br>在桌面，单击鼠标右键，查看是否存在 <code>Git GUI here</code>和 <code>Git Bash Here</code>。</p><h3 id="第二步-注册Github账号（已注册请跳过此步骤）"><a href="#第二步-注册Github账号（已注册请跳过此步骤）" class="headerlink" title="第二步 注册Github账号（已注册请跳过此步骤）"></a>第二步 注册Github账号（已注册请跳过此步骤）</h3><p><a href="https://github.com/" target="_blank" rel="noopener">Github官网</a></p><p><em>对英语不太擅长的人推荐使用浏览器的翻译页面功能翻译Github以提升浏览速度</em></p><h3 id="第三步-安装Hexo到电脑，完成初始化"><a href="#第三步-安装Hexo到电脑，完成初始化" class="headerlink" title="第三步 安装Hexo到电脑，完成初始化"></a>第三步 安装Hexo到电脑，完成初始化</h3><p>1.右击桌面空白处打开GIt Bash Here，输入以下内容</p><p><code>npm install hexo-cli -g</code>                     </p><p><code>npm install hexo-deployer-git --save</code>    </p><p>2.之后选好你要存放博客文件的位置，在这个位置新建一个文件夹，并将这个文件夹命名为hexo</p><p>进入文件夹</p><p>3.右击打开Git Bash Here，输入以下命令初始化hexo</p><p><code>hexo init</code>            </p><p><em>hexo初始化完成后刷新文件夹，你会看到文件夹内多出了许多的文件</em></p><p>4.右击打开GIt Bash Here，输入以下命令，部署网页，开启本地服务</p><p><code>hexo generate</code></p><p><code>hexo server</code></p><p>在浏览器里输出 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a>，即可查看博客效果</p><h3 id="第四步-Github仓库的建立"><a href="#第四步-Github仓库的建立" class="headerlink" title="第四步 Github仓库的建立"></a>第四步 Github仓库的建立</h3><p>1.登录到自己的GitHub上面</p><p>2.点击右上角的加号</p><p>3.选择 New repository</p><p>4.在Repository name下的文本框中输出 username.github.io 然后完成创建</p><p><em>输入的username部分替换为你的Github用户名，如 kuiwaiwai.github.io</em></p><p><em>选择public(公开)</em></p><h3 id="第五步-SSH秘钥配置以及相应配置"><a href="#第五步-SSH秘钥配置以及相应配置" class="headerlink" title="第五步 SSH秘钥配置以及相应配置"></a>第五步 SSH秘钥配置以及相应配置</h3><p>1.在hexo文件夹内右击打开GIt Bash Here输入以下命令</p><p><code>ssh-keygen -t rsa -C &quot;你的github注册邮件地址&quot;</code></p><p>注意！请将””内文字替换为你的github注册邮件地址，如“<a href="mailto:100000000@qq.com">100000000@qq.com</a>”</p><p>2.连续按三次回车直到秘钥创建完成</p><p>3.打开C盘内的用户文件夹，找到.ssh\id_rsa.pub文件（若找不到请搜索文件），记事本打开并复制里面的<strong>全部内容</strong> </p><p>4.打开你的Github主页，点击右上角图像旁的倒三角，选择settings</p><p>5.在左侧栏点击SSH and GPG keys，选择 New SSH key ，在title处输入任意内容，在key处输出你刚才复制的秘钥信息，最后完成设置</p><p>6.在GIt Bash Here中输入以下命令以检验SSH配置是否成功</p><p><code>ssh -T git@github.com</code><br><em>若出现提示请输入yes</em></p><p>7.配置用户名和文件</p><p>在GIt Bash Here中输入以下命令</p><p><code>git config --global user.name &quot;username&quot;</code></p><p><em>username处提替换为你的Github用户名</em></p><p><code>git config --global user.email &quot;username@xxxx.com&quot;</code> </p><p><em><a href="mailto:username@xxxx.com">username@xxxx.com</a>处替换为你注册Github账号时填入的邮箱</em></p><h3 id="第六步-配置Hexo"><a href="#第六步-配置Hexo" class="headerlink" title="第六步 配置Hexo"></a>第六步 配置Hexo</h3><p>打开hexo文件夹里面的_config.yml，修改你的配置</p><p>这是一张中文配置对照表，供大家参考</p><p><code>#博客名称</code><br>    <code>title: 我的博客</code><br>    <code>#副标题</code><br>    <code>subtitle:</code><br>    <code>#简介</code><br>    <code>description:</code><br>    <code>#博客作者</code><br>    <code>author: Rainy</code><br>    <code>#博客语言</code><br>    <code>language: zh-CN</code><br>    <code>#时区</code><br>    <code>timezone:</code></p><p><code>#博客地址,与申请的GitHub一致</code><br><code>url: http://kuiwaiwai.github.io</code><br><code>root: /</code><br><code>#博客链接格式</code><br><code>permalink: :year/:month/:day/:title/</code><br><code>permalink_defaults:</code></p><p><code>source_dir: source</code><br><code>public_dir: public</code><br><code>tag_dir: tags</code><br><code>archive_dir: archives</code><br><code>category_dir: categories</code><br><code>code_dir: downloads/code</code><br><code>i18n_dir: :lang</code><br><code>skip_render:</code></p><p><code>new_post_name: :title.md # File name of new posts</code><br><code>default_layout: post</code><br><code>titlecase: false # Transform title into titlecase</code><br><code>external_link: true # Open external links in new tab</code><br><code>filename_case: 0</code><br><code>render_drafts: false</code><br><code>post_asset_folder: false</code><br><code>relative_link: false</code><br><code>future: true</code><br><code>highlight:</code><br>  <code>enable: true</code><br>  <code>line_number: true</code><br>  <code>auto_detect: true</code><br>  <code>tab_replace:</code></p><p><code>default_category: uncategorized</code><br><code>category_map:</code><br><code>tag_map:</code></p><p><code>#日期格式</code><br><code>date_format: YYYY-MM-DD</code><br><code>time_format: HH:mm:ss</code></p><p><code>#分页，每页文章数量</code><br><code>per_page: 10</code><br><code>pagination_dir: page</code></p><p><code>#博客主题</code><br><code>theme: landscape</code></p><p><code>#发布设置</code><br><code>deploy:</code><br>  <code>type: git</code><br>  <code>#kuiwaiwai改为你的github用户名</code><br>  <code>repo:git@github.com:kuiwaiwai/kuiwaiwai.github.io.git</code><br>  <code>branch: master</code></p><h3 id="第七步-博客基本完成，部署上传，浏览页面"><a href="#第七步-博客基本完成，部署上传，浏览页面" class="headerlink" title="第七步 博客基本完成，部署上传，浏览页面"></a>第七步 博客基本完成，部署上传，浏览页面</h3><p>1.在hexo文件夹内右击打开GIt Bash Here输入以下命令</p><p><code>hexo g</code></p><p><code>hexo d</code></p><p>或者输入</p><p><code>hexo g -d</code></p><p><em>如果出现下面的错误，是因为deployer安装没有成功导致的。</em></p><p><em>ERROR Deployer not found: git</em></p><p><em>使用下面的命令重新安装</em></p><p><em>`npm install hexo-deployer-git –save</em>`</p><p>2.在浏览器输入网址访问你的博客页面</p><p>网址： <a href="https://username.github.io" target="_blank" rel="noopener">https://username.github.io</a> </p><p><strong>username替换为你的Github用户名</strong> </p><p>——————————————————————</p><h3 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h3><p>本文参考</p><p><a href="https://blog.csdn.net/loveyouluobin/article/details/80037108" target="_blank" rel="noopener">CSDN博客1</a></p><p><a href="https://blog.csdn.net/star_dee/article/details/83043255" target="_blank" rel="noopener">CSDN博客2</a></p><p>作者：奎歪歪</p><p>转载请署名</p><p>hexo加Github搭建个人博客（一）全文已完</p><p>在之后的篇章中我将为大家介绍一些hexo的基本命令以及关于hexo主题的配置，请大家持续关注</p><p><em>这是我的第一篇博客文章，若有问题请敬请指正</em></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>

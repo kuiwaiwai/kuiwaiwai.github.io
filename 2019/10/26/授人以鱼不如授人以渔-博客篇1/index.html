@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/logoicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="平凡者">
+  <meta name="author" content="kuiwaiwai">
+  <meta name="keywords" content="">
+  <title>授人以鱼不如授人以渔-博客篇-1 - 奎歪歪 的站</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css" />
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+
+  <link  rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css" />
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>奎歪歪 的站</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">首页</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">归档</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">分类</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">标签</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+                <p class="mt-3 post-meta">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                  星期六, 十月 26日 2019, 9:00 上午
+                </p>
+              
+
+              <p class="mt-1">
+                
+                  
+                  <span class="post-meta">
+                    <i class="far fa-chart-bar"></i>
+                    1.3k 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta">
+                      <i class="far fa-clock"></i>
+                    
+                    
+                    15
+                     分钟
+                  </span>
+                
+
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <div class="markdown-body">
+              <h1 id="授人以鱼不如授人以渔-博客篇-1"><a href="#授人以鱼不如授人以渔-博客篇-1" class="headerlink" title="授人以鱼不如授人以渔-博客篇-1"></a>授人以鱼不如授人以渔-博客篇-1</h1><h2 id="hexo加Github搭建个人博客（一）"><a href="#hexo加Github搭建个人博客（一）" class="headerlink" title="hexo加Github搭建个人博客（一）"></a>hexo加Github搭建个人博客（一）</h2><p>在这之前，我们先介绍一下hexo加Github搭建博客的有关事项</p>
+<p><em>1.hexo搭建的是静态网页，每次修改后都要执行静态生成，然后再执行部署</em></p>
+<p><em>2.Github仓库服务器到博客网页需要一定的传输时间（反应时间），在博客更新部署后博客网页不会立刻做出改变，需要稍等一会</em></p>
+<h3 id="第一步：安装Github和node-js"><a href="#第一步：安装Github和node-js" class="headerlink" title="第一步：安装Github和node.js"></a>第一步：安装Github和node.js</h3><p>1.Node.js安装地址</p>
+<p><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node下载</a></p>
+<p>2.Github安装地址</p>
+<p><a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Github下载</a></p>
+<p>Github安装教程：<a href="https://www.runoob.com/git/git-install-setup.html" target="_blank" rel="noopener">Git安装教程</a></p>
+<p>3.在安装Github后用以下方法确认是否安装成功</p>
+<p><strong>方法1</strong><br>微软键+R ——&gt; cmd ——&gt; 键入<code>git version</code> 出现版本号表示安装完成</p>
+<p><strong>方法2</strong><br>在桌面，单击鼠标右键，查看是否存在 <code>Git GUI here</code>和 <code>Git Bash Here</code>。</p>
+<h3 id="第二步-注册Github账号（已注册请跳过此步骤）"><a href="#第二步-注册Github账号（已注册请跳过此步骤）" class="headerlink" title="第二步 注册Github账号（已注册请跳过此步骤）"></a>第二步 注册Github账号（已注册请跳过此步骤）</h3><p><a href="https://github.com/" target="_blank" rel="noopener">Github官网</a></p>
+<p><em>对英语不太擅长的人推荐使用浏览器的翻译页面功能翻译Github以提升浏览速度</em></p>
+<h3 id="第三步-安装Hexo到电脑，完成初始化"><a href="#第三步-安装Hexo到电脑，完成初始化" class="headerlink" title="第三步 安装Hexo到电脑，完成初始化"></a>第三步 安装Hexo到电脑，完成初始化</h3><p>1.右击桌面空白处打开GIt Bash Here，输入以下内容</p>
+<p><code>npm install hexo-cli -g</code>                     </p>
+<p><code>npm install hexo-deployer-git --save</code>    </p>
+<p>2.之后选好你要存放博客文件的位置，在这个位置新建一个文件夹，并将这个文件夹命名为hexo</p>
+<p>进入文件夹</p>
+<p>3.右击打开Git Bash Here，输入以下命令初始化hexo</p>
+<p><code>hexo init</code>            </p>
+<p><em>hexo初始化完成后刷新文件夹，你会看到文件夹内多出了许多的文件</em></p>
+<p>4.右击打开GIt Bash Here，输入以下命令，部署网页，开启本地服务</p>
+<p><code>hexo generate</code></p>
+<p><code>hexo server</code></p>
+<p>在浏览器里输出 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a>，即可查看博客效果</p>
+<h3 id="第四步-Github仓库的建立"><a href="#第四步-Github仓库的建立" class="headerlink" title="第四步 Github仓库的建立"></a>第四步 Github仓库的建立</h3><p>1.登录到自己的GitHub上面</p>
+<p>2.点击右上角的加号</p>
+<p>3.选择 New repository</p>
+<p>4.在Repository name下的文本框中输出 username.github.io 然后完成创建</p>
+<p><em>输入的username部分替换为你的Github用户名，如 kuiwaiwai.github.io</em></p>
+<p><em>选择public(公开)</em></p>
+<h3 id="第五步-SSH秘钥配置以及相应配置"><a href="#第五步-SSH秘钥配置以及相应配置" class="headerlink" title="第五步 SSH秘钥配置以及相应配置"></a>第五步 SSH秘钥配置以及相应配置</h3><p>1.在hexo文件夹内右击打开GIt Bash Here输入以下命令</p>
+<p><code>ssh-keygen -t rsa -C &quot;你的github注册邮件地址&quot;</code></p>
+<p>注意！请将””内文字替换为你的github注册邮件地址，如“<a href="mailto:100000000@qq.com">100000000@qq.com</a>”</p>
+<p>2.连续按三次回车直到秘钥创建完成</p>
+<p>3.打开C盘内的用户文件夹，找到.ssh\id_rsa.pub文件（若找不到请搜索文件），记事本打开并复制里面的<strong>全部内容</strong> </p>
+<p>4.打开你的Github主页，点击右上角图像旁的倒三角，选择settings</p>
+<p>5.在左侧栏点击SSH and GPG keys，选择 New SSH key ，在title处输入任意内容，在key处输出你刚才复制的秘钥信息，最后完成设置</p>
+<p>6.在GIt Bash Here中输入以下命令以检验SSH配置是否成功</p>
+<p><code>ssh -T git@github.com</code><br><em>若出现提示请输入yes</em></p>
+<p>7.配置用户名和文件</p>
+<p>在GIt Bash Here中输入以下命令</p>
+<p><code>git config --global user.name &quot;username&quot;</code></p>
+<p><em>username处提替换为你的Github用户名</em></p>
+<p><code>git config --global user.email &quot;username@xxxx.com&quot;</code> </p>
+<p><em><a href="mailto:username@xxxx.com">username@xxxx.com</a>处替换为你注册Github账号时填入的邮箱</em></p>
+<h3 id="第六步-配置Hexo"><a href="#第六步-配置Hexo" class="headerlink" title="第六步 配置Hexo"></a>第六步 配置Hexo</h3><p>打开hexo文件夹里面的_config.yml，修改你的配置</p>
+<p>这是一张中文配置对照表，供大家参考</p>
+<p><code>#博客名称</code><br>    <code>title: 我的博客</code><br>    <code>#副标题</code><br>    <code>subtitle:</code><br>    <code>#简介</code><br>    <code>description:</code><br>    <code>#博客作者</code><br>    <code>author: Rainy</code><br>    <code>#博客语言</code><br>    <code>language: zh-CN</code><br>    <code>#时区</code><br>    <code>timezone:</code></p>
+<p><code>#博客地址,与申请的GitHub一致</code><br><code>url: http://kuiwaiwai.github.io</code><br><code>root: /</code><br><code>#博客链接格式</code><br><code>permalink: :year/:month/:day/:title/</code><br><code>permalink_defaults:</code></p>
+<p><code>source_dir: source</code><br><code>public_dir: public</code><br><code>tag_dir: tags</code><br><code>archive_dir: archives</code><br><code>category_dir: categories</code><br><code>code_dir: downloads/code</code><br><code>i18n_dir: :lang</code><br><code>skip_render:</code></p>
+<p><code>new_post_name: :title.md # File name of new posts</code><br><code>default_layout: post</code><br><code>titlecase: false # Transform title into titlecase</code><br><code>external_link: true # Open external links in new tab</code><br><code>filename_case: 0</code><br><code>render_drafts: false</code><br><code>post_asset_folder: false</code><br><code>relative_link: false</code><br><code>future: true</code><br><code>highlight:</code><br>  <code>enable: true</code><br>  <code>line_number: true</code><br>  <code>auto_detect: true</code><br>  <code>tab_replace:</code></p>
+<p><code>default_category: uncategorized</code><br><code>category_map:</code><br><code>tag_map:</code></p>
+<p><code>#日期格式</code><br><code>date_format: YYYY-MM-DD</code><br><code>time_format: HH:mm:ss</code></p>
+<p><code>#分页，每页文章数量</code><br><code>per_page: 10</code><br><code>pagination_dir: page</code></p>
+<p><code>#博客主题</code><br><code>theme: landscape</code></p>
+<p><code>#发布设置</code><br><code>deploy:</code><br>  <code>type: git</code><br>  <code>#kuiwaiwai改为你的github用户名</code><br>  <code>repo:git@github.com:kuiwaiwai/kuiwaiwai.github.io.git</code><br>  <code>branch: master</code></p>
+<h3 id="第七步-博客基本完成，部署上传，浏览页面"><a href="#第七步-博客基本完成，部署上传，浏览页面" class="headerlink" title="第七步 博客基本完成，部署上传，浏览页面"></a>第七步 博客基本完成，部署上传，浏览页面</h3><p>1.在hexo文件夹内右击打开GIt Bash Here输入以下命令</p>
+<p><code>hexo g</code></p>
+<p><code>hexo d</code></p>
+<p>或者输入</p>
+<p><code>hexo g -d</code></p>
+<p><em>如果出现下面的错误，是因为deployer安装没有成功导致的。</em></p>
+<p><em>ERROR Deployer not found: git</em></p>
+<p><em>使用下面的命令重新安装</em></p>
+<p><em>`npm install hexo-deployer-git –save</em>`</p>
+<p>2.在浏览器输入网址访问你的博客页面</p>
+<p>网址： <a href="https://username.github.io" target="_blank" rel="noopener">https://username.github.io</a> </p>
+<p><strong>username替换为你的Github用户名</strong> </p>
+<p>——————————————————————</p>
+<h3 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h3><p>本文参考</p>
+<p><a href="https://blog.csdn.net/loveyouluobin/article/details/80037108" target="_blank" rel="noopener">CSDN博客1</a></p>
+<p><a href="https://blog.csdn.net/star_dee/article/details/83043255" target="_blank" rel="noopener">CSDN博客2</a></p>
+<p>作者：奎歪歪</p>
+<p>转载请署名</p>
+<p>hexo加Github搭建个人博客（一）全文已完</p>
+<p>在之后的篇章中我将为大家介绍一些hexo的基本命令以及关于hexo主题的配置，请大家持续关注</p>
+<p><em>这是我的第一篇博客文章，若有问题请敬请指正</em></p>
+
+            </div>
+            <hr>
+            <div>
+              <p>
+                
+                  <span>
+                <i class="iconfont icon-inbox"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+                      &nbsp;
+                    
+                  </span>&nbsp;&nbsp;
+                
+                
+                  <span>
+                <i class="iconfont icon-tag"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/hexo/">hexo</a>
+                    
+                  </span>
+                
+              </p>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/2019/10/29/%E6%8E%88%E4%BA%BA%E4%BB%A5%E9%B1%BC%E4%B8%8D%E5%A6%82%E6%8E%88%E4%BA%BA%E4%BB%A5%E6%B8%94-%E5%8D%9A%E5%AE%A2%E7%AF%872/">
+                        <i class="fa fa-chevron-left"></i>
+                        <span class="hidden-mobile">授人以鱼不如授人以渔-博客篇-2</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+              
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc-start"></div>
+<div id="toc">
+  <p class="h5"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/popper.js/1.16.1/umd/popper.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/main.js" ></script>
+
+
+  <script  src="/js/lazyload.js" ></script>
+
+
+
+  
+  <script  src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var navHeight = $('#navbar').height();
+      var toc = $('#toc');
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+      var tocLimMax = 2 * boardTop + boardCtn.height();
+
+      $(window).scroll(function () {
+        var tocLimMin = $('#toc-start').offset().top - navHeight;
+        var scroH = document.body.scrollTop + document.documentElement.scrollTop;
+
+        if (tocLimMin <= scroH && scroH <= tocLimMax) {
+          toc.css({
+            'display': 'block',
+            'position': 'fixed',
+            'top': navHeight,
+          });
+        } else if (scroH <= tocLimMin) {
+          toc.css({
+            'position': '',
+            'top': '',
+          });
+        } else if (scroH > tocLimMax) {
+          toc.css('display', 'none');
+        }
+      });
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc > p').css('visibility', 'visible');
+      }
+      var offset = boardCtn.css('margin-right')
+      $('#toc-ctn').css({
+        'right': offset
+      })
+    });
+  </script>
+
+
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+
+
+<!-- Plugins -->
+
+
+
+  <script  src="https://cdn.staticfile.org/prettify/188.0.0/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').each(function () {
+        const pre = $(this);
+        if (pre.find('code.mermaid').length > 0) {
+          return;
+        }
+        pre.addClass('prettyprint  linenums');
+      });
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "授人以鱼不如授人以渔-博客篇-1&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

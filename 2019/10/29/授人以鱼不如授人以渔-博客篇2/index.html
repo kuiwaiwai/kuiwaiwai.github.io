@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/logoicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="平凡者">
+  <meta name="author" content="kuiwaiwai">
+  <meta name="keywords" content="">
+  <title>授人以鱼不如授人以渔-博客篇-2 - 奎歪歪 的站</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css" />
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+
+  <link  rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css" />
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>奎歪歪 的站</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">首页</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">归档</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">分类</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">标签</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+                <p class="mt-3 post-meta">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                  星期二, 十月 29日 2019, 12:00 凌晨
+                </p>
+              
+
+              <p class="mt-1">
+                
+                  
+                  <span class="post-meta">
+                    <i class="far fa-chart-bar"></i>
+                    1.3k 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta">
+                      <i class="far fa-clock"></i>
+                    
+                    
+                    14
+                     分钟
+                  </span>
+                
+
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <div class="markdown-body">
+              <h1 id="授人以鱼不如授人以渔-博客篇-2"><a href="#授人以鱼不如授人以渔-博客篇-2" class="headerlink" title="授人以鱼不如授人以渔-博客篇-2"></a>授人以鱼不如授人以渔-博客篇-2</h1><h2 id="hexo加Github搭建个人博客（二）"><a href="#hexo加Github搭建个人博客（二）" class="headerlink" title="hexo加Github搭建个人博客（二）"></a>hexo加Github搭建个人博客（二）</h2><p><em>本篇我将为大家介绍hexo的基本命令、Markdown的基本语法以及关于hexo主题的大致配置</em></p>
+<h3 id="hexo基本命令"><a href="#hexo基本命令" class="headerlink" title="hexo基本命令"></a>hexo基本命令</h3><p>在hexo的实际使用中我们用到许多的命令，下面我将为大家介绍一些常用的hexo命令</p>
+<h4 id="1-清理已生成的静态页面"><a href="#1-清理已生成的静态页面" class="headerlink" title="1.清理已生成的静态页面"></a>1.清理已生成的静态页面</h4><p><code>hexo clean</code></p>
+<p>这个命令可以清理已经生成的静态页面，一般在博客页面显示异常或者博客上传后页面并未更新时使用</p>
+<h4 id="2-生成静态页面"><a href="#2-生成静态页面" class="headerlink" title="2.生成静态页面"></a>2.生成静态页面</h4><p><code>hexo generate</code></p>
+<p>可简写为 <code>hexo g</code></p>
+<p>在第一篇时我已经向大家描述了hexo的静态生成，而这个命令就是用于此处</p>
+<p>当你在终端输入这个命令时，hexo就会将你填写的信息转换为静态网页</p>
+<h4 id="3-上传到仓库"><a href="#3-上传到仓库" class="headerlink" title="3.上传到仓库"></a>3.上传到仓库</h4><p><code>hexo deploy</code></p>
+<p>可简写为 <code>hexo d</code></p>
+<p>这个命令的作用是将你生成的静态网页和其它所需文件上传到deploy服务器中，但实际上这个命令也有一部分生成静态页面的作用，如果你是利用Github搭建的blog，那么这个命令就会将将文件传输到你所指定的Github仓库中</p>
+<h4 id="4-开启本地服务"><a href="#4-开启本地服务" class="headerlink" title="4.开启本地服务"></a>4.开启本地服务</h4><p><code>hexo server</code></p>
+<p>可简写为 <code>hexo s</code></p>
+<p>这个命令的作用是开启你的本地服务器，让你能够从本地服务器预览blog网页 默认预览地址： <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p>
+<p>对 Hexo 根目录_config.yml的进行的修改，需要重启本地服务器后才能预览效果</p>
+<h4 id="5-新建一篇博客文章"><a href="#5-新建一篇博客文章" class="headerlink" title="5.新建一篇博客文章"></a>5.新建一篇博客文章</h4><p><code>hexo new</code></p>
+<p>可简写为 <code>hexo n</code></p>
+<p>这是一个带参命令，正确使用形式为 <code>hexo n &quot;文章标题名称&quot;</code></p>
+<p>使用这个命令可以新建一个标题为 “ ” 中内容的文章</p>
+<h3 id="hexo的主题配置"><a href="#hexo的主题配置" class="headerlink" title="hexo的主题配置"></a>hexo的主题配置</h3><p>你可以在hexo主题网站选择你喜欢的主题</p>
+<p>大部分主题都有自己的安装教程，你可以在选择主题时查看</p>
+<p>hexo主题网站：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></p>
+<p><strong>hexo的主题繁多，这里我以我博客使用的主题 Butterfly 为例</strong></p>
+<p><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">Butterfly主题地址</a></p>
+<p><a href="https://jerryc.me/posts/21cfbf15/#%E5%BF%AB%E9%80%9F%E9%96%8B%E5%A7%8B" target="_blank" rel="noopener">Butterfly安装文档</a></p>
+<p>首先，在hexo文件夹中打开GIt Bash Here 输入以下命令</p>
+<p><code>git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly</code></p>
+<p>这时Butterfly就已经安装到了你的hexo本地文件夹下</p>
+<p>接下来您需要在hexo配置文件夹中将你的主题设置为Butterfly，如下</p>
+<p><code>theme: Butterfly</code></p>
+<p>之后你可以在 hexo\themes\Butterfly_config.yml 中对你的主题进行配置</p>
+<p>这是我的配置文件，供大家参考</p>
+<p><a href="https://shimo.im/docs/QvggxWqyJHVYdVxw/「001」" target="_blank" rel="noopener">配置浏览</a></p>
+<p>主题的配置都大同小异，我在我的Butterfly主题配置文件中添加了中文注释以方便大家阅读，如果有对于主题配置有其它的问题可以在主题的安装文档中查看(<a href="https://jerryc.me/posts/21cfbf15/#%E5%BF%AB%E9%80%9F%E9%96%8B%E5%A7%8B" target="_blank" rel="noopener">Butterfly安装文档</a>)</p>
+<h3 id="Markdown的基本语法"><a href="#Markdown的基本语法" class="headerlink" title="Markdown的基本语法"></a>Markdown的基本语法</h3><p> Markdown 语言是在 2004 由约翰·格鲁伯创建的一种轻量级标记语言，目前被广泛应用于各大编辑器中，Hexo的博客文章编辑系统便支持这一种语言。 </p>
+<h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><p>使用#符便可表示标题，一级标题为#，二级标题为##，以此类推</p>
+<pre><code class="Markdown"># 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题</code></pre>
+<h4 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h4><p>Markdown 可以使用以下几种字体：</p>
+<p><code>倾斜：* *或者 _ _</code></p>
+<p><code>加粗：** **或者__ __</code></p>
+<p><code>倾斜加粗：*** *** 或者___ ___</code></p>
+<pre><code class="markdown">*斜体文本*
+_斜体文本_
+**粗体文本**
+__粗体文本__
+***粗斜体文本***
+___粗斜体文本___</code></pre>
+<h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><p>Markdown 支持有序列表和无序列表。</p>
+<p>有序列表使用数字标记并加上.</p>
+<pre><code class="markdown">1. 一
+2. 二
+3. 三</code></pre>
+<p>无序列表使用星号(<strong>***)、加号(</strong>+<strong>)或是减号(</strong>-**)作为列表标记</p>
+<pre><code class="markdown">* 一
+* 二
+* 三
+
++ ACD
++ CDF
++ QWC
+
+
+- 奎
+- 歪
+- 歪</code></pre>
+<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><p>代码语句：‘ ’</p>
+<p>你可以利用’ ‘将代码片段以文本的方式完整地显示出来</p>
+<p><code>printf(&quot;kuiwaiwai&quot;);</code></p>
+<p>代码区块：</p>
+<p>代码区块代码区块使用 4 个空格或者一个制表符（Tab 键）。</p>
+<p>利用代码区块可以触发大部分网站的代码复制功能，使读者能够更简便地复制代码。</p>
+<pre><code class="c">while(1)
+{
+printf(&quot;kuiwaiwai&quot;);
+}</code></pre>
+<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><p>链接的使用方法有两种：</p>
+<p>直接链接：&lt; &gt;</p>
+<pre><code class="markdown">链接至必应&lt;https://cn.bing.com/&gt;</code></pre>
+<p><code>名称链接：[ ]( )</code></p>
+<pre><code class="markdown">链接至[必应](https://cn.bing.com/)</code></pre>
+<h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><p>图片的使用：</p>
+<p><code>！[属性](图片链接)</code></p>
+<p>例如显示一张Github的logo</p>
+<pre><code class="markdown">！[Github](https://maxcdn.icons8.com/Share/icon/p1em/Logos/github1600.png)</code></pre>
+<h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><p> Markdown 制作表格使用 <strong>|</strong> 来分隔不同的单元格，使用 <strong>-</strong> 来分隔表头和其他行。 </p>
+<pre><code class="markdown">|  表头   | 表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |</code></pre>
+<p><em>由于篇幅有限，所以这里只列出了一些基本的Markdown语法，有时间我会写一篇关于Markdown语法的详细教程。</em></p>
+<p>——————————————————————</p>
+<h3 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h3><p>本文参考</p>
+<p><a href="https://jerryc.me/posts/21cfbf15/#%E5%BF%AB%E9%80%9F%E9%96%8B%E5%A7%8B" target="_blank" rel="noopener">Butterfly安装文档</a></p>
+<p><a href="http://www.markdown.cn/" target="_blank" rel="noopener">Markdown官方</a></p>
+<p>作者：奎歪歪</p>
+<p>转载请署名</p>
+<p>hexo加Github搭建个人博客（二）全文已完</p>
+
+            </div>
+            <hr>
+            <div>
+              <p>
+                
+                  <span>
+                <i class="iconfont icon-inbox"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+                      &nbsp;
+                    
+                  </span>&nbsp;&nbsp;
+                
+                
+                  <span>
+                <i class="iconfont icon-tag"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/hexo/">hexo</a>
+                    
+                  </span>
+                
+              </p>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/2019/10/30/%E7%94%9F%E6%B4%BB%E7%9A%84%E9%80%89%E6%8B%A9/">
+                        <i class="fa fa-chevron-left"></i>
+                        <span class="hidden-mobile">Android应用推荐-生活的选择</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2019/10/26/%E6%8E%88%E4%BA%BA%E4%BB%A5%E9%B1%BC%E4%B8%8D%E5%A6%82%E6%8E%88%E4%BA%BA%E4%BB%A5%E6%B8%94-%E5%8D%9A%E5%AE%A2%E7%AF%871/">
+                        <span class="hidden-mobile">授人以鱼不如授人以渔-博客篇-1</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="fa fa-chevron-right"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+              
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc-start"></div>
+<div id="toc">
+  <p class="h5"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/popper.js/1.16.1/umd/popper.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/main.js" ></script>
+
+
+  <script  src="/js/lazyload.js" ></script>
+
+
+
+  
+  <script  src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var navHeight = $('#navbar').height();
+      var toc = $('#toc');
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+      var tocLimMax = 2 * boardTop + boardCtn.height();
+
+      $(window).scroll(function () {
+        var tocLimMin = $('#toc-start').offset().top - navHeight;
+        var scroH = document.body.scrollTop + document.documentElement.scrollTop;
+
+        if (tocLimMin <= scroH && scroH <= tocLimMax) {
+          toc.css({
+            'display': 'block',
+            'position': 'fixed',
+            'top': navHeight,
+          });
+        } else if (scroH <= tocLimMin) {
+          toc.css({
+            'position': '',
+            'top': '',
+          });
+        } else if (scroH > tocLimMax) {
+          toc.css('display', 'none');
+        }
+      });
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc > p').css('visibility', 'visible');
+      }
+      var offset = boardCtn.css('margin-right')
+      $('#toc-ctn').css({
+        'right': offset
+      })
+    });
+  </script>
+
+
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+
+
+<!-- Plugins -->
+
+
+
+  <script  src="https://cdn.staticfile.org/prettify/188.0.0/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').each(function () {
+        const pre = $(this);
+        if (pre.find('code.mermaid').length > 0) {
+          return;
+        }
+        pre.addClass('prettyprint  linenums');
+      });
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "授人以鱼不如授人以渔-博客篇-2&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
